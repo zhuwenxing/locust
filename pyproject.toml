@@ -52,6 +52,22 @@ dependencies = [
     "gevent>=24.10.1,<26.0.0",
 ]
 
+[project.optional-dependencies]
+milvus   = ["pymilvus>=2.4"]
+mongodb  = ["pymongo>=4.6"]
+postgres = ["psycopg[binary]>=3.1"]
+openai   = [
+    "openai>=1.30",
+    "httpx>=0.26",
+]
+contrib = [
+    "pymilvus>=2.4",
+    "pymongo>=4.6",
+    "psycopg[binary]>=3.1",
+    "openai>=1.30",
+    "httpx>=0.26",
+]
+
 [project.urls]
 homepage = "https://locust.io/"
 repository = "https://github.com/locustio/locust"
